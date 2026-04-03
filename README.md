@@ -3,8 +3,10 @@
 <p align="center">
   AI-powered clinical decision support demo built with Next.js, TypeScript, and Google Gemini.
 
-  [![Watch the MedFlow AI demo](./assets/thumbnail.png)](https://youtu.be/D2yU7eLqTsE)
 </p>
+## Video demo
+
+Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/D2yU7eLqTsE)
 
 <p align="center">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" />
@@ -103,11 +105,7 @@ This structure makes the demo more compelling than a single prompt-response app 
 - **Refinement loops** make treatment planning feel safer and more deliberate than a raw first draft.
 - **Final synthesis** gives the app a strong “clinical co-pilot” feel that demos especially well in videos and portfolio reviews.
 
-## Video demo
-
-Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/D2yU7eLqTsE)
-
-### Review Existing Patient Record — Example 1
+<!-- ### Review Existing Patient Record — Example 1
 
 <video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-1.mp4" controls width="600"></video>
 
@@ -117,7 +115,7 @@ Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/
 
 ### Add a New Patient Record and Run Analysis
 
-<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-3.mp4" controls width="600"></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-3.mp4" controls width="600"></video> -->
 
 ## Tech stack
 
@@ -137,10 +135,6 @@ app/
   page.tsx
 lib/
   ai.ts
-assets/
-  intro-1.mp4
-  intro-2.mp4
-  intro-3.mp4
 ```
 
 ## Local development
