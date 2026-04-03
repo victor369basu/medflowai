@@ -4,6 +4,7 @@
   AI-powered clinical decision support demo built with Next.js, TypeScript, and Google Gemini.
 
 </p>
+
 ## Video demo
 
 Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/D2yU7eLqTsE)

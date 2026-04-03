@@ -6,3 +6,4 @@ coverage/
 .env*
 !.env.example
 youtube.mp4
+*.mp4
