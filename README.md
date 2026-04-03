@@ -109,15 +109,15 @@ Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/
 
 ### Review Existing Patient Record — Example 1
 
-<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-1.mp4" controls></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-1.mp4" controls width="600"></video>
 
 ### Review Existing Patient Record — Example 2
 
-<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-2.mp4" controls></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-2.mp4" controls width="600"></video>
 
 ### Add a New Patient Record and Run Analysis
 
-<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-3.mp4" controls></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-3.mp4" controls width="600"></video>
 
 ## Tech stack
 
