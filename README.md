@@ -2,6 +2,8 @@
 
 <p align="center">
   AI-powered clinical decision support demo built with Next.js, TypeScript, and Google Gemini.
+
+  [![Watch the MedFlow AI demo](./assets/thumbnail.png)](https://youtu.be/D2yU7eLqTsE)
 </p>
 
 <p align="center">
@@ -18,9 +20,9 @@
   MedFlow AI simulates a modern clinical workflow from patient intake to final AI-assisted synthesis, with triage, diagnosis, treatment planning, audit logging, and exportable case records in one polished interface.
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <img src="./assets/thumbnail.png" alt="MedFlow AI Demo Thumbnail" width="100%" />
-</p>
+</p> -->
 
 ## Why this project stands out
 
@@ -107,15 +109,15 @@ Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/
 
 ### Review Existing Patient Record — Example 1
 
-<video src="./assets/intro-1.mp4" controls width="100%"></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-1.mp4" controls></video>
 
 ### Review Existing Patient Record — Example 2
 
-<video src="./assets/intro-2.mp4" controls width="100%"></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-2.mp4" controls></video>
 
 ### Add a New Patient Record and Run Analysis
 
-<video src="./assets/intro-3.mp4" controls width="100%"></video>
+<video src="https://raw.githubusercontent.com/victor369basu/medflowai/master/assets/intro-3.mp4" controls></video>
 
 ## Tech stack
 
