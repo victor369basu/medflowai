@@ -9,6 +9,9 @@
 
 Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/D2yU7eLqTsE)
 
+[![Watch the MedFlow AI demo](./assets/thumbnail.png)](https://youtu.be/D2yU7eLqTsE)
+
+
 <p align="center">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" />
   <img alt="React" src="https://img.shields.io/badge/React-19-20232A?logo=react" />
