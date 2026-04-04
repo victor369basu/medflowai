@@ -5,13 +5,6 @@
 
 </p>
 
-## Video demo
-
-Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/D2yU7eLqTsE)
-
-[![Watch the MedFlow AI demo](./assets/thumbnail.png)](https://youtu.be/D2yU7eLqTsE)
-
-
 <p align="center">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-15-black?logo=next.js" />
   <img alt="React" src="https://img.shields.io/badge/React-19-20232A?logo=react" />
@@ -25,6 +18,16 @@ Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/
 <p align="center">
   MedFlow AI simulates a modern clinical workflow from patient intake to final AI-assisted synthesis, with triage, diagnosis, treatment planning, audit logging, and exportable case records in one polished interface.
 </p>
+
+<p align="center">
+  <img src="./assets/intro.gif" alt="MedFlow AI intro demo" width="100%" />
+</p>
+
+## Video demo
+
+Watch the full demo on YouTube: [https://youtu.be/D2yU7eLqTsE](https://youtu.be/D2yU7eLqTsE)
+
+[![Watch the MedFlow AI demo](./assets/thumbnail.png)](https://youtu.be/D2yU7eLqTsE)
 
 <!-- <p align="center">
   <img src="./assets/thumbnail.png" alt="MedFlow AI Demo Thumbnail" width="100%" />
@@ -68,6 +71,10 @@ This structure makes the demo more compelling than a single prompt-response app 
 - Routes the case into an appropriate clinical path such as emergency, urgent, or routine.
 - Establishes the first decision point for everything that follows.
 
+<p align="center">
+  <img src="./assets/dashboard.png" alt="dashboard" width="100%" />
+</p>
+
 ### Pattern 2 — Diagnostic Orchestration
 
 `Triage context → diagnostic analysis → differential reasoning → recommended tests`
@@ -76,6 +83,10 @@ This structure makes the demo more compelling than a single prompt-response app 
 - Produces a primary diagnosis along with differentials and confidence signals.
 - Helps the workflow feel more like a real clinical reasoning process.
 
+<p align="center">
+  <img src="./assets/diagnosis.png" alt="diagnosis" width="100%" />
+</p>
+
 ### Pattern 3 — Treatment Evaluation Loop
 
 `Initial diagnosis → treatment draft → safety review → refined treatment plan`
@@ -83,6 +94,13 @@ This structure makes the demo more compelling than a single prompt-response app 
 - Starts with an evidence-based treatment proposal.
 - Passes that proposal through a second quality and safety review step.
 - Improves clarity, robustness, and realism over a one-pass output.
+<p align="center">
+  <img src="./assets/analysis.png" alt="analysis" width="100%" />
+</p>
+
+<p align="center">
+  <img src="./assets/treatment.png" alt="treatment" width="100%" />
+</p>
 
 ### Pattern 4 — Clinical Agent Synthesis
 
@@ -91,6 +109,10 @@ This structure makes the demo more compelling than a single prompt-response app 
 - Combines intake, triage, diagnosis, and treatment into one final recommendation.
 - Presents the app as an end-to-end clinical decision support experience.
 - Gives the demo a strong “AI copilot” finish that reads well in public portfolios.
+
+<p align="center">
+  <img src="./assets/clinical-agent.png" alt="agent" width="100%" />
+</p>
 
 ## Key features
 

@@ -1,0 +1,142 @@
+{
+  "caseId": "1",
+  "timestamp": "2026-04-04T14:28:52.557Z",
+  "patientInfo": {
+    "id": "1",
+    "age": "68",
+    "gender": "Female",
+    "symptoms": "Sudden onset weakness in right arm and leg, facial drooping, difficulty speaking.",
+    "heartRate": "95",
+    "bloodPressure": "185/105",
+    "temp": "98.4",
+    "o2": "96",
+    "createdAt": 1775309010679
+  },
+  "assessments": {
+    "triage": {
+      "severity": "emergency",
+      "specialty": "Neurology",
+      "reasoning": "Suspected acute stroke based on focal neurological deficits and hypertension.",
+      "vitals_concern": true
+    },
+    "diagnosis": {
+      "differential_diagnoses": [
+        {
+          "condition": "Acute Ischemic Stroke",
+          "probability": 0.75,
+          "reasoning": "Classic sudden onset of focal neurologic deficits including right-sided hemiparesis, facial droop, and speech difficulties, highly localizing to the left middle cerebral artery (MCA) territory. Age and significant hypertension are major risk factors."
+        },
+        {
+          "condition": "Intracerebral Hemorrhage",
+          "probability": 0.15,
+          "reasoning": "Clinically indistinguishable from an ischemic stroke on initial presentation. The significantly elevated blood pressure (185/105) increases the suspicion for a hemorrhagic event, requiring an emergent non-contrast CT to differentiate."
+        },
+        {
+          "condition": "Hypoglycemia",
+          "probability": 0.06,
+          "reasoning": "A very common stroke mimic that can cause sudden focal neurologic deficits, including hemiparesis and aphasia. It must be rapidly ruled out in all suspected stroke patients."
+        },
+        {
+          "condition": "Transient Ischemic Attack (TIA)",
+          "probability": 0.04,
+          "reasoning": "Presents with identical sudden onset focal neurologic symptoms due to temporary ischemia. It remains on the differential if the symptoms begin to resolve completely within a short timeframe, though it is treated as a stroke acutely."
+        }
+      ],
+      "primary_diagnosis": "Acute Left Middle Cerebral Artery (MCA) Stroke",
+      "confidence_score": 0.92,
+      "recommended_tests": [
+        "Stat Non-contrast Head CT",
+        "Point-of-care Blood Glucose",
+        "CT Angiography (CTA) Head and Neck",
+        "Electrocardiogram (ECG)",
+        "Complete Blood Count (CBC)",
+        "Basic Metabolic Panel (BMP)",
+        "Coagulation Panel (PT/INR, aPTT)",
+        "Troponin"
+      ]
+    },
+    "treatment": {
+      "plan": [
+        {
+          "category": "Medication",
+          "action": "Check point-of-care blood glucose to rule out hypoglycemia, then administer intravenous Tenecteplase 0.25 mg/kg (max 25mg) or Alteplase 0.9 mg/kg (max 90mg) if onset is <4.5 hours and no contraindications exist.",
+          "rationale": "Thrombolytic therapy is the standard of care for acute ischemic stroke. Hypoglycemia must be ruled out first as it can mimic stroke symptoms."
+        },
+        {
+          "category": "Procedure",
+          "action": "Urgent CT Angiography (CTA) of the Head and Neck and CT Perfusion followed by Mechanical Thrombectomy if Large Vessel Occlusion is confirmed.",
+          "rationale": "Mechanical thrombectomy is highly effective for MCA occlusions up to 24 hours from last known well, often providing better outcomes than medical management alone for LVO."
+        },
+        {
+          "category": "Medication",
+          "action": "Initiate IV Labetalol 10-20 mg or Nicardipine infusion (5-15 mg/hr) to ensure Blood Pressure is strictly below 185/110 mmHg prior to thrombolysis and below 180/105 mmHg after.",
+          "rationale": "The patient's current BP (185/105) is at the absolute upper limit. Strict blood pressure control is mandatory to reduce the risk of symptomatic intracranial hemorrhage following reperfusion therapy."
+        },
+        {
+          "category": "Procedure",
+          "action": "Apply Intermittent Pneumatic Compression (IPC) devices to bilateral lower extremities upon admission.",
+          "rationale": "The patient has right arm and leg weakness, putting her at high risk for DVT. Pharmacological DVT prophylaxis is contraindicated for 24 hours post-thrombolysis."
+        },
+        {
+          "category": "Follow-up",
+          "action": "Admit to a dedicated Stroke Unit for continuous neurologic monitoring, NIHSS serial assessments, and a follow-up non-contrast CT head at 24 hours.",
+          "rationale": "Close monitoring allows for early detection of hemorrhagic transformation, cerebral edema, or recurrent stroke."
+        },
+        {
+          "category": "Lifestyle",
+          "action": "Maintain NPO (nothing by mouth) status, keep head of bed elevated at 30 degrees, and conduct a formal swallow evaluation by Speech-Language Pathology (SLP).",
+          "rationale": "Left MCA strokes frequently involve language and motor centers, significantly increasing the risk of dysphagia and aspiration pneumonia."
+        },
+        {
+          "category": "Medication",
+          "action": "Initiate high-intensity statin therapy (Atorvastatin 80mg) and Aspirin (initial dose 325mg), strictly delaying Aspirin until 24 hours post-thrombolysis and after repeat CT scan clears hemorrhage.",
+          "rationale": "Statins provide neuroprotection and stabilization of atherosclerotic plaques, while antiplatelets are essential for secondary stroke prevention."
+        }
+      ],
+      "safety_warnings": [
+        "Point-of-care blood glucose must be checked before giving thrombolytics to rule out hypoglycemia.",
+        "Monitor closely for signs of symptomatic intracranial hemorrhage (sudden headache, vomiting, decreased LOC).",
+        "Monitor for orolingual angioedema, a rare but serious side effect of thrombolytics, especially in patients taking ACE inhibitors.",
+        "Do not initiate any antiplatelet, anticoagulant, or pharmacological DVT prophylaxis therapy until a 24-hour post-thrombolytic CT scan has ruled out hemorrhage.",
+        "Maintain strict BP parameters (currently borderline at 185/105); hypotension may exacerbate penumbral ischemia while hypertension increases bleeding risk."
+      ],
+      "quality_score": 98
+    },
+    "finalDecision": "**MEDFLOW CLINICAL AGENT: SYNTHESIS & FINAL DECISION**\n\n**Patient Profile:** 68-year-old Female | **ID:** 1 \n**Chief Complaint:** Sudden onset right-sided weakness, facial droop, and expressive aphasia. \n**Vitals:** HR 95 bpm, BP 185/105 mmHg, Temp 98.4°F, O2 96% on room air.\n**Triage Level:** EMERGENCY (Neurology / Code Stroke)\n\n---\n\n### ⚙️ SIMULATED TOOL EXECUTION\n\n**1. Risk Score Calculation (HEART/TIMI / NIHSS)**\n*   *HEART Score Query:* Result = 3 (Age, Hypertension). Low immediate risk for Acute Coronary Syndrome (ACS).\n*   *Neurological Override (NIHSS Estimation):* High priority. Based on right arm/leg weakness, facial palsy, and speech deficit, the estimated NIHSS is 12–16, indicating a moderate-to-severe stroke.\n\n**2. Guideline Database Query (AHA/ASA Stroke Guidelines)**\n*   *Query:* Acute ischemic stroke management, anterior circulation, BP parameters.\n*   *Result:* Level 1A recommendation for IV thrombolysis (Tenecteplase 0.25 mg/kg or Alteplase) if \"last known well\" is <4.5 hours. \n*   *Alert:* Blood pressure *must* be strictly controlled to <185/110 mmHg prior to thrombolytic administration and <180/105 mmHg for 24 hours post-administration to minimize hemorrhagic transformation risk. Mechanical thrombectomy indicated for Large Vessel Occlusion (LVO) up to 24 hours.\n\n**3. Similar Case Search**\n*   *Query:* 68F, Left MCA syndrome, borderline hypertensive presentation.\n*   *Result:* Analysis of 500+ similar presentations indicates that borderline BP (185/105) often spikes during CT imaging, delaying \"door-to-needle\" time. Preemptive IV antihypertensive staging is highly correlated with improved reperfusion times and functional outcomes.\n\n---\n\n### 🔬 CLINICAL SYNTHESIS\n\nThe patient presents with classic, acute left Middle Cerebral Artery (MCA) syndrome. The sudden onset of focal neurological deficits (right hemiparesis, facial droop, aphasia) combined with the patient's age and hypertension makes an **Acute Left MCA Ischemic Stroke** the definitive primary diagnosis (Confidence: 0.92), pending neuroimaging to rule out intracerebral hemorrhage. \n\nThe immediate clinical threat is irreversible penumbral infarction. The primary barrier to rapid intervention is her current blood pressure of 185/105 mmHg, which sits at the absolute threshold for thrombolytic contraindication. Hypoglycemia must also be immediately ruled out as a stroke mimic. \n\n---\n\n### 📋 FINAL AUTHORITATIVE RECOMMENDATION & ORDERS\n\nInitiate immediate **CODE STROKE** protocol. The following actions must be executed sequentially and emergently:\n\n**PHASE 1: Immediate Triage & Diagnostics (Door to 15 Minutes)**\n1.  **Point-of-Care Blood Glucose (STAT):** Perform immediately. If <60 mg/dL, correct and reassess neurology. If normal, proceed with stroke pathway.\n2.  **Stat Non-Contrast Head CT:** Clear for intracerebral hemorrhage. \n3.  **Blood Pressure Management:** Prepare IV Labetalol (10-20 mg push) or Nicardipine infusion at bedside. Administer immediately if BP exceeds 185/110 mmHg at any point prior to imaging or thrombolysis.\n\n**PHASE 2: Reperfusion Therapy (Door to 45 Minutes)**\n4.  **Intravenous Thrombolysis:** Pending a clear Head CT and normal glucose, administer IV Tenecteplase (0.25 mg/kg, max 25mg) immediately if the patient is within the 4.5-hour window from \"last known well\" and has no other contraindications.\n5.  **CT Angiography (CTA) & Perfusion:** Perform immediately following the non-contrast CT to identify Large Vessel Occlusion (LVO). \n6.  **Neurosurgical Consult:** If CTA confirms left MCA LVO, activate Endovascular Neurosurgery immediately for Mechanical Thrombectomy.\n\n**PHASE 3: Stabilization & Admission (Post-Reperfusion)**\n7.  **Strict BP Parameters:** Maintain BP <180/105 mmHg post-lytics. Set automated BP cuff to cycle every 15 minutes for 2 hours, then every 30 minutes for 6 hours.\n8.  **NPO Status:** Strict NPO until a formal dysphagia screen/swallow evaluation is cleared by Speech-Language Pathology (SLP).\n9.  **DVT Prophylaxis:** Apply Intermittent Pneumatic Compression (IPC) devices bilaterally. *Contraindication Warning:* Do NOT administer aspirin, Plavix, or pharmacological DVT prophylaxis (heparin/Lovenox) for 24 hours post-thrombolysis.\n10. **Disposition:** Admit directly to the dedicated Neurological Intensive Care Unit (Neuro-ICU) or Stroke Unit for continuous monitoring and serial NIHSS assessments. Ensure follow-up CT Head at 24 hours."
+  },
+  "auditLog": [
+    {
+      "timestamp": 1775309010679,
+      "action": "Case Created",
+      "type": "system"
+    },
+    {
+      "timestamp": 1775309110679,
+      "action": "Triage Performed",
+      "details": "Emergency - Neurology",
+      "type": "ai"
+    },
+    {
+      "timestamp": 1775312615768,
+      "action": "Case Accessed",
+      "type": "user"
+    },
+    {
+      "timestamp": 1775312638090,
+      "action": "Diagnosis Performed",
+      "details": "Acute Left Middle Cerebral Artery (MCA) Stroke",
+      "type": "ai"
+    },
+    {
+      "timestamp": 1775312725160,
+      "action": "Treatment Plan Generated & Refined",
+      "details": "Quality Score: 98",
+      "type": "ai"
+    },
+    {
+      "timestamp": 1775312814247,
+      "action": "Final Clinical Synthesis Performed",
+      "type": "ai"
+    }
+  ]
+}
